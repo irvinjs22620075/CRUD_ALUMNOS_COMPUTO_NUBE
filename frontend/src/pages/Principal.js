@@ -1,31 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { Platform, StyleSheet, Text, View,Image, SafeAreaView, Icon, ScrollView, TextInput, TouchableOpacity, ImageBackground } from 'react-native';
 import React, { useEffect } from 'react';
-// import {interpolate, useAnimatedStyle, useSharedValue, withSpring} from 'react-native-reanimated';
-
 
 import { MaterialIcons } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { useIsFocused } from '@react-navigation/native';
 
-
-
-
-
 export default function Principal({ navigation }) {
-  //   const scale = useSharedValue(0);
-
-  //   useEffect(()=>{
-  //     scale.value = withSpring(typeof useIsFocused === 'boolean' ? (useIsFocused ? 1 : 0 ) : useIsFocused,
-  //      {duration:350});
-  //   },[scale, useIsFocused]);
-
-  //   const animatedTextStyle = useAnimatedStyle(() => {
-  //     const opacity = interpolate(scale.value, [0,1],[1,0]);
-  // return{
-  //   opacity
-  // }
-  //   });
   return (
 
     <SafeAreaView style={style.mainS}>
@@ -37,15 +18,7 @@ export default function Principal({ navigation }) {
 
       </View>
       <ScrollView style={{ padding: 15 }}>
-        {/* Inicio de Lista */}
-        {/* <View>
-          <TouchableOpacity style={style.login} onPress={() => navigation.navigate("Home")}>
-            <Text style={style.tittleLogin}>
-              Sign up
-            </Text>
-          </TouchableOpacity>
-        </View> */}
-
+ 
         <View style={style.card1}>
           {/* <Text style={style.tittleB}>Bienvenidos </Text> */}
          
@@ -60,11 +33,6 @@ export default function Principal({ navigation }) {
               <FontAwesome5 name="user-plus" size={20} alignSelf={'center'} color={'#fff'} />
 
             </TouchableOpacity>
-            {/* <TouchableOpacity style={style.cardBotonD}>
-              <Text style={style.textcardBoton}>Registrar Docentes</Text>
-              <FontAwesome5 name="user-plus" size={20} alignSelf={'center'} color={'#fff'} />
-
-            </TouchableOpacity> */}
           </View>
           <Text style={{ color: '#fff', marginTop: 40, }}>Contactos</Text>
           <View style={style.iconsCard}>
@@ -111,11 +79,7 @@ const style = StyleSheet.create({
     // padding: 25,
     marginTop: 27,
   },
-  // wallpaper: {
-  //   flex: 1,
-  //   width: '100%',
-  //   height: '100%',
-  // },
+
    headerTopBar: {
     backgroundColor: '#1d3557',
     //  borderRadius: 3,
@@ -167,18 +131,8 @@ const style = StyleSheet.create({
     padding: 8,
     margin: 4,
     marginTop: 40,
-    // flexDirection:'row'
 
   },
-  // cardBotonD: {
-  //   backgroundColor: '#1f6831ff',
-  //   borderRadius: 16,
-  //   padding: 8,
-  //   margin: 4,
-  //   marginTop: 20,
-  //   // flexDirection:'row'
-
-  // },
   textcardBoton: {
     fontSize: 16,
     fontWeight: 'bold',
